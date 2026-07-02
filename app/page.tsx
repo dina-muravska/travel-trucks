@@ -1,11 +1,11 @@
 import Header from '../components/Header/Header';
-// import HomePage from '../components/HomePage/HomePage';
+import Hero from '../components/Hero/Hero';
 
 export default function HomePage() {
   return (
     <>
       <Header />
-      {/* <HomePage /> */}
+      <Hero />
     </>
   );
 }
