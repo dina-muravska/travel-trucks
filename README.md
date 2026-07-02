@@ -39,33 +39,6 @@ The website showcases an extensive catalog of campers with detailed specificatio
 
 ---
 
-## 📂 Project Structure
-
-project-folder
-│
-├── public
-│   ├── herolImage.webp
-│   └── assets and graphics
-│
-└── src
-├── components
-│   ├── CatalogPage
-│   ├── CamperDetails
-│   ├── Header
-│   ├── Hero
-│   ├── Loader
-│   └── TanStackProvider
-│
-├── lib
-│   ├── api
-│   ├── hooks
-│   │   └── useCampers.ts
-│   └── camperApi.ts
-├── types
-
-
----
-
 ## 🎨 Website Sections
 
 - **Home Page** – introductory section with a CTA button ("View Now") leading to the catalog
