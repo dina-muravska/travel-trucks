@@ -124,10 +124,10 @@
 
 .showMoreBtn {
   display: inline-block;
-
   margin-top: auto;
   padding: 16px 44px;
-
+  width: 175px;
+  height: 56px;
   background-color: var(--grey-green);
   color: var(--white);
   border-radius: 200px;

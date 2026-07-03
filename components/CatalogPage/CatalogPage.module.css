@@ -1,0 +1,25 @@
+.catalogLayout {
+  padding-top: 72px;
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 65px;
+  padding-top: 48px;
+  width: 100%;
+}
+
+.sidebar {
+  width: 360px;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
