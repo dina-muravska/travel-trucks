@@ -39,8 +39,8 @@ export default function CamperGallery({ images }: Props) {
               <Image
                 src={img.original}
                 alt="Camper view main"
-                width={608}
-                height={461}
+                width={638}
+                height={505}
                 className={css.heroView}
                 priority
               />
