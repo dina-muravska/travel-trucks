@@ -1,7 +1,7 @@
 'use client';
 
 import { useInfiniteQuery } from '@tanstack/react-query';
-import { getCampers } from '../camperApi';
+import { getCampers } from '../../lib/api/camperApi';
 import type { CampersParams } from '@/types/camper';
 
 const LIMIT = 4;

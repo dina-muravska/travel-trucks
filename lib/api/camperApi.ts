@@ -1,5 +1,5 @@
 import { CampersResponse, CampersParams, CamperDetails } from '@/types/camper';
-import api from './api/api';
+import api from './api';
 
 export const getCampers = async (params: CampersParams = {}): Promise<CampersResponse> => {
   const queryParams: Record<string, string> = {};
@@ -16,3 +16,8 @@ export const getCampers = async (params: CampersParams = {}): Promise<CampersRes
 
   return data;
 };
+
+export async function getCamperById(id: string): Promise<CamperDetails> {
+  const res = await api.get<CamperDetails>(`/campers/${id}`);
+  return res.data;
+}
