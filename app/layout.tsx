@@ -19,6 +19,9 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: 'TravelTrucks - Camper Rental',
   description: 'Find and rent the best camper vans for your ultimate road trip.',
+  icons: {
+    icon: '/truckIcon2.png',
+  },
 };
 
 export default function RootLayout({
