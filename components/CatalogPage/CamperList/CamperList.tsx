@@ -2,7 +2,6 @@
 
 import { useCampers } from '../../../lib/hooks/useCampers';
 import CamperCard from '../CamperCard/CamperCard';
-import Loader from '@/components/Loader/Loader';
 import type { CampersParams } from '@/types/camper';
 import css from './CamperList.module.css';
 
@@ -11,10 +10,8 @@ interface Props {
 }
 
 export default function CamperList({ filters }: Props) {
-  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading, isError } =
-    useCampers(filters);
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isError } = useCampers(filters);
 
-  if (isLoading) return <Loader />;
   if (isError) return <p className={css.errorMessage}>Something went wrong.</p>;
 
   const campers = data?.pages.flatMap(page => page.campers) ?? [];
