@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 888px;
+  height: 840px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background-image: url('/noFoundImage.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 120px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--main);
+  margin: 484px 0 16px 0;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main);
+  line-height: 1.5;
+  margin: 0 0 43px 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.clearBtn {
+  display: flex;
+  align-items: center;
+  width: 192px;
+  height: 56px;
+  gap: 4px;
+  padding: 16px 38px;
+  border: 1px solid var(--gray-light);
+  border-radius: 200px;
+  background: var(--white);
+  color: #101828;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clearBtn:hover {
+  border-color: var(--green-hover);
+}
+
+.viewBtn {
+  width: 192px;
+  height: 56px;
+  padding: 16px 24px;
+  background: var(--grey-green);
+  color: var(--white);
+  border: none;
+  border-radius: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.viewBtn:hover {
+  background: var(--green-hover);
+}
