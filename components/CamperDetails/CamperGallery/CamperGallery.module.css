@@ -1,0 +1,76 @@
+.galleryBox {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  width: 100%;
+  max-width: 638px;
+}
+
+.heroContainer {
+  width: 100%;
+  border-radius: 17px;
+  overflow: hidden;
+  display: flex;
+}
+
+.mainSlider {
+  width: 100%;
+  display: flex;
+  --swiper-navigation-color: var(--white, #ffffff);
+  --swiper-navigation-size: 24px;
+}
+
+.mainSlideItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.heroView {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.previewContainer {
+  width: 100%;
+  display: flex;
+}
+
+.thumbsSlider {
+  width: 100%;
+  display: flex;
+}
+
+.thumbSlideItem {
+  display: flex;
+}
+
+.previewItem {
+  width: 136px;
+  height: 144px;
+  padding: 0;
+  background: transparent;
+  border: 3px solid transparent;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.previewImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+:global(.swiper-slide-thumb-active) .previewItem {
+  border-color: var(--grey-green);
+}
