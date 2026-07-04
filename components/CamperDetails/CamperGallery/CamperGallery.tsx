@@ -12,7 +12,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-import styles from './CamperGallery.module.css';
+import css from './CamperGallery.module.css';
 
 interface Props {
   images: CamperImage[];
@@ -24,24 +24,24 @@ export default function CamperGallery({ images }: Props) {
   if (!images?.length) return null;
 
   return (
-    <div className={styles.galleryBox}>
-      <div className={styles.heroContainer}>
+    <div className={css.galleryBox}>
+      <div className={css.heroContainer}>
         <Swiper
           loop={true}
           spaceBetween={10}
           navigation={true}
           thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
           modules={[FreeMode, Navigation, Thumbs]}
-          className={styles.mainSlider}
+          className={css.mainSlider}
         >
           {images.map(img => (
-            <SwiperSlide key={img.id} className={styles.mainSlideItem}>
+            <SwiperSlide key={img.id} className={css.mainSlideItem}>
               <Image
                 src={img.original}
                 alt="Camper view main"
                 width={608}
                 height={461}
-                className={styles.heroView}
+                className={css.heroView}
                 priority
               />
             </SwiperSlide>
@@ -49,7 +49,7 @@ export default function CamperGallery({ images }: Props) {
         </Swiper>
       </div>
 
-      <div className={styles.previewContainer}>
+      <div className={css.previewContainer}>
         <Swiper
           onSwiper={setThumbsSwiper}
           loop={images.length > 4}
@@ -58,13 +58,13 @@ export default function CamperGallery({ images }: Props) {
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className={styles.thumbsSlider}
+          className={css.thumbsSlider}
         >
           {images.slice(0, 4).map((img, idx) => (
-            <SwiperSlide key={img.id} className={styles.thumbSlideItem}>
+            <SwiperSlide key={img.id} className={css.thumbSlideItem}>
               <button
                 type="button"
-                className={styles.previewItem}
+                className={css.previewItem}
                 aria-label={`View photo ${idx + 1}`}
               >
                 <Image
@@ -72,7 +72,7 @@ export default function CamperGallery({ images }: Props) {
                   alt="Camper thumb"
                   width={140}
                   height={96}
-                  className={styles.previewImg}
+                  className={css.previewImg}
                 />
               </button>
             </SwiperSlide>
