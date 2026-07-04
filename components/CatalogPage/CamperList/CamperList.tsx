@@ -12,13 +12,15 @@ interface Props {
 }
 
 export default function CamperList({ filters, onResetFilters }: Props) {
-  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isError } = useCampers(filters);
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isError, isLoading, isFetching } =
+    useCampers(filters);
 
   if (isError) return <p className={css.errorMessage}>Something went wrong.</p>;
+  if (isLoading) return null;
 
   const campers = data?.pages.flatMap((page: CampersResponse) => page.campers) ?? [];
 
-  if (campers.length === 0) {
+  if (campers.length === 0 && !isFetching) {
     return (
       <CamperNoFound
         onReset={() => {
