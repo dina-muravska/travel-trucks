@@ -117,6 +117,14 @@
   mix-blend-mode: multiply;
 }
 
+:root[data-theme='dark'] .badge {
+  background: #d7b38c;
+}
+
+:root[data-theme='dark'] .badgeIcon {
+  color: #f7efe4;
+}
+
 .badgeIcon {
   font-size: 20px;
   color: var(--main);

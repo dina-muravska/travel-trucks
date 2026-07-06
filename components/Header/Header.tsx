@@ -3,10 +3,12 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { useTheme } from '@/components/ThemeProvider/ThemeProvider';
 import css from './Header.module.css';
 
 export default function Header() {
   const pathname = usePathname();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className={css.header}>
@@ -31,6 +33,15 @@ export default function Header() {
             Catalog
           </Link>
         </nav>
+
+        <button
+          type="button"
+          className={css.themeToggle}
+          onClick={toggleTheme}
+          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+        >
+          {theme === 'light' ? '☀️' : '🌙'}
+        </button>
       </div>
     </header>
   );

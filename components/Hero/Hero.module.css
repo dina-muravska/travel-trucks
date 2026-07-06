@@ -1,20 +1,39 @@
 .hero {
-  background-color: var(--inputs);
   width: 100%;
-  height: 864px;
-  background-image: url('/heroImage.webp');
-  background-size: cover;
-  background-position: left center;
-  background-repeat: no-repeat;
+  min-height: 864px;
   display: flex;
   align-items: center;
+  padding: 120px 0 72px;
+  background:
+    linear-gradient(90deg, rgba(35, 52, 63, 0.82) 0%, rgba(35, 52, 63, 0.2) 100%),
+    url('/heroImage.webp') center/cover no-repeat;
+}
+
+:root[data-theme='dark'] .hero {
+  background:
+    linear-gradient(90deg, rgba(12, 15, 20, 0.92) 0%, rgba(12, 15, 20, 0.45) 100%),
+    url('/heroImage.webp') center/cover no-repeat;
+}
+
+.heroInner {
+  width: 100%;
 }
 
 .content {
   max-width: 600px;
-  color: var(--inputs);
+  color: var(--hero-title);
   position: relative;
   z-index: 1;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .title {
@@ -22,6 +41,7 @@
   font-size: 48px;
   line-height: 1.15;
   margin-bottom: 16px;
+  color: var(--hero-title);
 }
 
 .subtitle {
@@ -29,23 +49,26 @@
   font-size: 24px;
   line-height: 1.33;
   margin-bottom: 40px;
+  color: var(--hero-subtitle);
 }
 
 .btn {
   display: inline-block;
-  width: 173px;
-  height: 56px;
+  min-width: 173px;
   padding: 16px 48px;
   border-radius: 200px;
-  background-color: var(--grey-green);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--button) 100%);
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.01em;
-  transition: background-color 0.3s;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .btn:hover {
-  background-color: var(--green-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(214, 121, 76, 0.25);
 }
