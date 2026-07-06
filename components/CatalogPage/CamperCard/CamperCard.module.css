@@ -118,7 +118,8 @@
 }
 
 :root[data-theme='dark'] .badge {
-  background: #d7b38c;
+  background: #a79073;
+  mix-blend-mode: normal;
 }
 
 :root[data-theme='dark'] .badgeIcon {
