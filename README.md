@@ -6,6 +6,13 @@ The website showcases an extensive catalog of campers with detailed specificatio
 
 ---
 
+## 🖼️ Preview
+
+<img width="1861" height="780" alt="image" src="https://github.com/user-attachments/assets/50646cdc-a456-499f-8fe2-c3bf222f1694" />
+
+
+---
+
 ## 🚀 Live Demo
 
 - 🔗 Live Site: https://travel-trucks-rosy-one.vercel.app/
@@ -62,3 +69,12 @@ Create a .env.local file in the root directory and add the API endpoint:
 Bash
 npm run dev
 Open http://localhost:3000 with your browser to see the result.
+
+## 👨‍💻 Author
+
+**Dina Muravska**
+
+GitHub: https://github.com/dina-muravska
+
+---
+
