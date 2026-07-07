@@ -8,8 +8,8 @@ The website showcases an extensive catalog of campers with detailed specificatio
 
 ## 🚀 Live Demo
 
-- 🔗 Live Site:
-- 🔗 Repository:
+- 🔗 Live Site: https://travel-trucks-rosy-one.vercel.app/
+- 🔗 Repository: https://github.com/dina-muravska/travel-trucks
 
 ---
 
