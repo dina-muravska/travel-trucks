@@ -69,9 +69,7 @@ Create a .env.local file in the root directory and add the API endpoint:
 Bash
 npm run dev
 Open http://localhost:3000 with your browser to see the result.
-
-
----
+```
 
 ## 👨‍💻 Author
 
@@ -80,4 +78,3 @@ Open http://localhost:3000 with your browser to see the result.
 GitHub: https://github.com/dina-muravska
 
 ---
-
